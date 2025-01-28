@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <section>
+      <header>
+        <h2 id="easyGuide">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse earum
+          corporis laborum eos, quisquam commodi? Nesciunt veritatis voluptas,
+          non dolorem culpa explicabo similique fugit quaerat corporis, aliquid
+          obcaecati, tenetur esse.
+        </h2>
+      </header>
+    </section>
+
+    <a href="https://www.kali.org/" target="_blank">Website Kali Linux</a>
+
+    <p>
+      <a href="#easyGuide" title="Link untuk menuju Heading"
+        >Menuju heading EasyGuide</a
+      >
+    </p>
+
+    <p>
+      <a
+        href="https://cdimage.kali.org/kali-2024.4/kali-linux-2024.4-installer-amd64.iso"
+        target="_blank"
+        download="Kali-Linux-ISO"
+        >Kali Linux</a
+      >
+      (ISO , 3,7GB)
+    </p>
+
+    <h1>Belajar Membuat Form</h1>
+
+    <form action="" method="POST">
+      <fieldset>
+        <legend>Data Diri</legend>
+        <p>
+          <label for="nama">username</label>
+          <input id="nama" type="text" placeholder="nama" name="username" />
+        </p>
+
+        <p>
+          <label for="pass">Password</label>
+          <input id="pass" type="password" name="password" required />
+        </p>
+
+        <p>
+          <label for="email">Email</label>
+          <input id="email" type="email" name="email" />
+        </p>
+
+        <p>
+          <label for="umur">Umur</label>
+          <input id="umur" type="number" name="umur" hidden />
+        </p>
+
+        <p>
+          <label for="date">Date</label>
+          <input id="date" type="date" name="date" disabled />
+        </p>
+
+        <p>
+          <label for="url">Alamat Linkdln</label>
+          <input id="url" type="url" name="url" />
+        </p>
+
+        <p>
+          <label for="file">Upload KTP</label>
+          <input id="file" type="file" name="FILE" />
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Status</legend>
+        <ul>
+          <li>
+            <label for="aktif">Aktif</label>
+            <input type="radio" id="aktif" name="status" value="aktif" />
+          </li>
+          <li>
+            <label for="tidak">Tidak Aktif</label>
+            <input type="radio" id="tidak" name="status" value="tidak_aktif" />
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset>
+        <legend>Status</legend>
+        <input
+          type="checkbox"
+          id="aktif"
+          name="Konfirmasi"
+          value="aktif"
+          checked
+        />
+        <label for="aktif">Konfirmasi</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Review</legend>
+
+        <label for="review"></label>
+        <textarea style="resize: none" name=" " id="review" cols="50" rows="5">
+        </textarea>
+        <p>
+          <label for="dropdown">Option</label>
+          <select name="selection" id="dropdown">
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+          </select>
+        </p>
+      </fieldset>
+      <button type="submit">Submit Pendaftran</button>
+    </form>
+  </body>
+</html>
