@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Poppins", serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.parent {
+  font-size: 10px;
+}
+
+.child {
+  font-size: 10px;
+  width: 50vw;
+  height: 3vh;
+  border: 1px solid red;
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* test view port */
+.border {
+  border: 1px solid red;
+}
+
+.box {
+  width: 50vw;
+  height: 3vh;
+  background-color: bisque;
+}
+
+.childs {
+  text-align: left;
+  /* text-decoration: line-through; */
+  text-transform: lowercase;
+}
+
+/* .childs::before {
+  content: "P";
+  font-size: 5rem;
+} */
+
+.childs::after {
+  content: "- lorem ipsum";
+  font-size: 0.8rem;
+}
+
+.childs::first-line {
+  color: rgb(223, 12, 12);
+}
+
+.childs::first-letter {
+  font-size: 5rem;
+}
+
+.childs::selection {
+  color: blue;
+}
+
+.box2 {
+  font-size: 20px;
+  background-color: blueviolet;
+  width: 200px;
+  height: 250px;
+
+  text-align: center;
+  color: antiquewhite;
+}
+
+.box2:active {
+  background-color: antiquewhite;
+  font-size: 50px;
+}
+
+.box2:hover {
+  background-color: blue;
+}
+
+.testPseudo > p:nth-child(even) {
+  color: red;
+}
