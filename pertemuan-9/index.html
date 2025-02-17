@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let namaDepan = "Muhamad";
+      let namaTengah = "Husni";
+      let namaBelakang = "Muhajiry";
+
+      //   '  single quote
+      //   "  double quote
+      //   `  backtick
+
+      let puisi1 = "Dia" + namaDepan + "adalah orang yang sangat baik";
+      let puisi2 = `Dia ${namaTengah} adalah orang yang baik seuniverse`;
+
+      console.log(puisi2);
+
+      let tas = [
+        "laptop",
+        ["pulpen", "pencsil", "penghapus", [2000, "KTP", "SIM"]],
+        "buku",
+      ];
+      console.log(tas[1][3][0]); // 2000
+
+      //   objek
+      let orang1 = {
+        nama: "Muhamad Husni",
+        agama: "Islam",
+        jenisKelamin: "male",
+      };
+      let orang2 = {
+        nama: "Ali",
+        agama: "Muslim",
+        jenisKelamin: "Male",
+      };
+
+      console.log(orang1.agama);
+      console.log(orang2.agama);
+
+      // latihan
+
+      let susah = {
+        projects: [
+          {
+            projectName: "Project A",
+            tasks: [
+              { taskName: "Task 1", taskStatus: "In Progress" },
+              { taskName: "Task 2", taskStatus: "Complated" },
+            ],
+          },
+          {
+            projectName: "Project B",
+            tasks: [
+              { taskName: "Task 1", taskStatus: "In Progress" },
+              { taskName: "Task 2", taskStatus: "Complated" },
+            ],
+          },
+        ],
+      };
+
+      console.log(susah.projects[1].tasks[1].taskStatus);
+    </script>
+  </body>
+</html>
