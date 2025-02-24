@@ -7,8 +7,8 @@
   </head>
   <body>
     <script>
-      let isRun = false;
-      let isRide = true;
+      let isRun = true;
+      let isRide = false;
       let time = "15 menit";
 
       if (isRun) {
@@ -22,6 +22,8 @@
       console.log("if: " + time);
 
       let condition = "naik motor";
+
+      //Switch Case
 
       switch (condition) {
         case "lari":
@@ -41,6 +43,10 @@
       }
 
       console.log("switch case : " + time);
+
+      // Tenary unruk mempermudah tulisan if
+
+      console.log("operator tenary: " + (isRun ? "7 menit" : "14 menit"));
     </script>
   </body>
 </html>

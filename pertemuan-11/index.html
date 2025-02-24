@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contoh Looping</title>
+  </head>
+  <body>
+    Hello
+    <script>
+      // ketika menaiki tangga, 0 - 5
+      //              awal (initial) -> (kondisi)         -> akhir (increament)
+      // variable = anakTangga       -> anakTangga < 5    ->anakTangga++
+      // value = 0                   -> 0 < 5             -> 0+1
+      console.log("Awal");
+      let totalAnakTangga = 10;
+      for (let anakTangga = 0; anakTangga < totalAnakTangga; anakTangga++) {
+        console.log(
+          `Menaiki anak tangga ke ${anakTangga} dari total ${totalAnakTangga}`
+        );
+      }
+      console.log("AKHIR");
+
+      totalAnakTangga + -5;
+      console.log(totalAnakTangga);
+
+      let mobil = {
+        ban: 4,
+        kacaSpion: 2,
+        mesin: 1,
+        kursi: 6,
+        merk: "BMW",
+        type: "M3",
+        harga: "Rp. 500.000 Milisar",
+      };
+
+      for (let part in mobil) {
+        console.log(`part ${part} yang tersedia di mobil ada ${mobil[part]}`);
+      }
+
+      //   // console.log(mobil.ban)
+      //   for (let x in arrayData) {
+      //     console.log(`${x} in ${arraData[x]}`);
+      //   }
+
+      let googleMeetPeople = [
+        {
+          nama: "icksan",
+          foto: "link foto",
+        },
+        "Rafi",
+        "Hanif",
+        "Aditya",
+        "aji",
+        "dena",
+        "erik",
+        "fajrul",
+        "fakhri",
+      ];
+
+      for (let index = 0; index < googleMeetPeople.length; index++) {
+        console.log(
+          `peserta meet ke ${index} Adalah ${googleMeetPeople[index]}`
+        );
+      }
+    </script>
+  </body>
+</html>
